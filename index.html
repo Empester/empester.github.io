@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empester's Site</title>
-        <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/825018924809846844/1218695294133469184/Secur-modified_1.png?ex=66089970&is=65f62470&hm=0103356e94ca70aa6caca2016cc9ae33356dcc47e2a70ecd7e8815611e104e6d&">
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/825018924809846844/1218695294133469184/Secur-modified_1.png?ex=66089970&is=65f62470&hm=0103356e94ca70aa6caca2016cc9ae33356dcc47e2a70ecd7e8815611e104e6d&">
     <style>
         body {
-            background-color: #832121;
+            background-color: #1a1a1a;
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
@@ -16,18 +16,21 @@
         h1 {
             font-size: 48px;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #000000;
         }
         p {
             font-size: 20px;
             line-height: 1.6;
+            text-shadow: 1px 1px 2px #000000;
         }
         .logo {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            background-image: url('https://media.discordapp.net/attachments/825018924809846844/1216053220313534484/Secur.png?ex=65fefcd0&is=65ec87d0&hm=c777d18d70ca820f9d4737af58bc3c0248e501646781cea43010a8eef5d35e97&=&format=webp&quality=lossless&width=625&height=625'); /* Replace with your image path */
+            background-image: url('https://media.discordapp.net/attachments/825018924809846844/1216053220313534484/Secur.png?ex=65fefcd0&is=65ec87d0&hm=c777d18d70ca820f9d4737af58bc3c0248e501646781cea43010a8eef5d35e97&=&format=webp&quality=lossless&width=625&height=625');
             background-size: cover;
             margin: 0 auto 20px;
+            box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
         }
         .cta-button {
             display: inline-block;
@@ -39,6 +42,7 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
         }
         .cta-button:hover {
             background-color: #ff5722;
@@ -47,24 +51,51 @@
             font-size: 14px;
             margin-top: 40px;
         }
+        .portfolio-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff4500;
+            color: #ffffff;
+            font-size: 18px;
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            box-shadow: 0px 0px 10px 2px rgba(255,255,255,0.5);
+        }
+        .portfolio-button:hover {
+            background-color: #ff5722;
+            border-color: #ff5722;
+        }
     </style>
     <script>
-        // Add some interactive magic here!
         function greetPlayer() {
             const playerName = prompt("Site In Work.");
             if (playerName) {
                 alert(`Welcome, ${playerName}! Get ready for an epic adventure!`);
             }
         }
+        function showPortfolio() {
+            window.location.href = 'https://empesterportfolio.onrender.com'; // Replace with your new site URL
+        }
     </script>
 </head>
 <body>
-    <div class="logo"></div>
-    <h1>Empester's Portfolio</h1>
-    <p>The current site is in it's building stages. Please visit the site later. - Empester</p>
-    <button class="cta-button" onclick="greetPlayer()">The site is no</button>
-    <div class="footer">
-        © 2024 EmpDev | All rights reserved
+    <div id="home">
+        <div class="logo"></div>
+        <h1>Empester's Portfolio</h1>
+        <p>The current site is in it's building stages. Please visit the site later. - Empester</p>
+        <button class="cta-button" onclick="greetPlayer()">The site is no</button>
+        <button class="portfolio-button" onclick="showPortfolio()">Development Work</button>
+        <div class="footer">
+            © 2024 EmpDev | All rights reserved
+        </div>
+    </div>
+    <div id="portfolio" style="display: none;">
+        <!-- Your portfolio content here... -->
     </div>
 </body>
 </html>
