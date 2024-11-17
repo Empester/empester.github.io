@@ -1,0 +1,42 @@
+
+body {
+    background-color: #28282B;
+}
+
+
+
+p {
+    padding-left: 5px;
+    color: white;
+}
+
+#py {
+    color:rgb(86, 86, 241);
+}
+
+#HTML {
+    color: rgb(240, 151, 61);
+}
+
+#CSS {
+    color:#8ba7e9;
+}
+
+#me {
+    color: rgb(208, 81, 81)
+}
+
+
+
+h1 {
+    color: red;
+    text-align: center;
+    padding-top:50px;
+}
+
+footer {
+    padding-top: 450px;
+    font-size:15px;
+}
+
+
